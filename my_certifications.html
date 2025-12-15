@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Devin Hollingsworth" />
+  <meta name="description" content="Certifications by Devin Hollingsworth" />
+  <meta name="theme-color" content="#0a66c2" />
+
+  <title>Certifications | Devin Hollingsworth</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="icon" href="images/my-logo-nt.png" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="hero hero-small">
+    <div class="hero-content">
+      <div class="hero-top">
+        <div class="brand">
+          <img class="hero-logo" src="images/my-logo.png" alt="Devin logo" />
+          <div class="brand-text">
+            <h1>Certifications</h1>
+            <p class="hero-tagline">Technical training & achievements</p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+            <span>Theme</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="hero-nav" aria-label="Primary">
+        <a class="nav-pill" href="index.html">Home</a>
+        <a class="nav-pill" href="projects.html">Projects</a>
+        <a class="nav-pill" href="my_certifications.html" aria-current="page">Certifications</a>
+        <a class="nav-pill" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="card reveal">
+      <div class="card-head">
+        <h2>Certificates</h2>
+        <p class="muted">Click any certificate to view it larger.</p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card" data-title="Introduction to HTML"
+             data-desc="Covers semantic structure, accessibility basics, and building well-formed pages."
+             data-tags="HTML,Web,Accessibility"
+             onclick="openCert(this)">
+          <img src="images/Intro_to_HTML.png" alt="Introduction to HTML certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Introduction to HTML</h3>
+            <p>Semantic structure, accessibility, and well-formed pages.</p>
+            <div class="cert-tags">
+              <span>HTML</span><span>Web</span><span>Accessibility</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Introduction to CSS"
+             data-desc="Layouts, responsive design, Flexbox, Grid, and modern styling fundamentals."
+             data-tags="CSS,Responsive,Design"
+             onclick="openCert(this)">
+          <img src="images/Intro-css.png" alt="Introduction to CSS certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Introduction to CSS</h3>
+            <p>Responsive layouts, Flexbox, Grid, and styling fundamentals.</p>
+            <div class="cert-tags">
+              <span>CSS</span><span>Responsive</span><span>Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Introduction to JavaScript"
+             data-desc="Programming basics, DOM interaction, events, and building interactive web behavior."
+             data-tags="JavaScript,DOM,Web"
+             onclick="openCert(this)">
+          <img src="images/Intro-Javascript.png" alt="Introduction to JavaScript certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Introduction to JavaScript</h3>
+            <p>DOM, events, fundamentals, and interactive web behavior.</p>
+            <div class="cert-tags">
+              <span>JavaScript</span><span>DOM</span><span>Web</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Introduction to SQL"
+             data-desc="Database basics, querying, filtering, joins, and working with structured data."
+             data-tags="SQL,Databases,Queries"
+             onclick="openCert(this)">
+          <img src="images/intro-sql.png" alt="Introduction to SQL certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Introduction to SQL</h3>
+            <p>Queries, filtering, joins, and database fundamentals.</p>
+            <div class="cert-tags">
+              <span>SQL</span><span>Databases</span><span>Queries</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Introduction to Python"
+             data-desc="Core syntax, data structures, functions, and writing small automation scripts."
+             data-tags="Python,Scripting,Programming"
+             onclick="openCert(this)">
+          <img src="images/intro-python.png" alt="Introduction to Python certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Introduction to Python</h3>
+            <p>Syntax, data structures, functions, and small scripts.</p>
+            <div class="cert-tags">
+              <span>Python</span><span>Scripting</span><span>Programming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Introduction to C"
+             data-desc="Low-level programming fundamentals, memory concepts, and compiled language basics."
+             data-tags="C,Systems,Programming"
+             onclick="openCert(this)">
+          <img src="images/intro-C.png" alt="Introduction to C certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Introduction to C</h3>
+            <p>Low-level fundamentals and compiled language basics.</p>
+            <div class="cert-tags">
+              <span>C</span><span>Systems</span><span>Programming</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Web Development"
+             data-desc="Broader web development concepts including structure, style, interactivity, and workflows."
+             data-tags="Web,Frontend,Workflow"
+             onclick="openCert(this)">
+          <img src="images/webdev.png" alt="Web Development certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Web Development</h3>
+            <p>Web fundamentals and practical development workflows.</p>
+            <div class="cert-tags">
+              <span>Web</span><span>Frontend</span><span>Workflow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Tech for Everyone"
+             data-desc="A broad overview of modern technology concepts and how systems fit together."
+             data-tags="Tech,Fundamentals,IT"
+             onclick="openCert(this)">
+          <img src="images/techforeveryone.png" alt="Tech for Everyone certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Tech for Everyone</h3>
+            <p>High-level tech concepts and how systems connect.</p>
+            <div class="cert-tags">
+              <span>Tech</span><span>Fundamentals</span><span>IT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card" data-title="Coding Foundations"
+             data-desc="Programming fundamentals: problem solving, logic, debugging, and core coding concepts."
+             data-tags="Foundations,Logic,Debugging"
+             onclick="openCert(this)">
+          <img src="images/coding-foundations.png" alt="Coding Foundations certificate" loading="lazy" />
+          <div class="cert-content">
+            <h3>Coding Foundations</h3>
+            <p>Core programming concepts: logic, debugging, and problem-solving.</p>
+            <div class="cert-tags">
+              <span>Foundations</span><span>Logic</span><span>Debugging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="certModal" class="cert-modal" aria-hidden="true">
+    <div class="cert-modal-content" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <button class="icon-btn cert-close" type="button" aria-label="Close preview" onclick="closeCert()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="modalImg" src="" alt="Certificate preview" />
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc" class="muted"></p>
+      <div id="modalTags" class="cert-tags cert-tags-modal"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-line">
+      <span>© 2025 Devin Hollingsworth</span>
+      <a class="muted" href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
